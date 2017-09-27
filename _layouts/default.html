@@ -1,66 +1,27 @@
-
 <!doctype html>
 <html class="no-js" lang="de">
 <head>
   <meta charset="utf-8" />
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>mdeuerlein.github.io</title>
-  <meta name="description" content="creating websites since 1998">
-  <meta name="keywords" content="">
-
-  <!-- Google Fonts -->
-  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
-
-  <!-- CSS Reset -->
-  <link rel="stylesheet" href="//cdn.rawgit.com/necolas/normalize.css/master/normalize.css">
-
-  <!-- Milligram CSS minified -->
-  <link rel="stylesheet" href="//cdn.rawgit.com/milligram/milligram/master/dist/milligram.min.css">
+  {% include meta.html %}
+  {% include assets.html %}
+  </head>
 </head>
+
 <body>
+{% include page_header.html %}
 
-  <div class="header-top" style="background: #f4f5f6;
-    border-bottom: .1rem solid #d1d1d1;
-    display: block;
-    height: 5.2rem;
-    left: 0;
-    max-width: 100%;
-    position: fixed;
-    right: 0;
-    top: 0;
-    width: 100%;
-    z-index: 1;">
-    <div class="container"><div class="column"><h2>mdeuerlein</h2></div></div>
-  </div>
+<div class="container" style="margin-top: 10rem;">
+  <div class="row">
 
-  <div class="container" style="margin-top: 10rem;">
-
-    <div class="row">
-
-      <!-- sidebar -->
-      <div class="column">
-	<h3>Links</h3>
-        <b><a href="https://github.com/erusev/parsedown">Parsedown</b></a><br>PHP-Markedown Parser<br>
-        <b><a href="http://milligram.io/">Milligram</a></b><br>
-        Minimalistic CSS Framework<br>
-        <b><a href="http://markdown.de/">Markdown</a></b><br>
-        The Markdown Syntax<br>
-        <br><hr>
-        <p><small>2017 &copy; by mdeuerlein</small></p>
-      </div>
-      <!-- /.sidebar -->	    
-
+    {% include page_sidebar.html %}
+    {% include page_content.html %}
 	    
-      <!-- maincontent -->
-      <div class="column column-75">
-        {{ content }}
-      </div>
-      <!-- /.maincontent -->
-
-	    
-    </div><!-- /.row -->
-  </div><!-- /.container -->
+  </div><!-- /.row -->
+</div><!-- /.container -->
 
 </body>
 </html>
+
+
