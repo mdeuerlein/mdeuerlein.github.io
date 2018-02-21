@@ -1,7 +1,12 @@
+name: mdeuerlein, entidia
+markdown: kramdown
+
 title: mdeuerlein
 description: My Personal Blog
 author: Markus Deuerlein
 github: https://github.com/mdeuerlein
+
+
 
 baseurl: ""
 url: ""
