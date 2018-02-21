@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Blog
+title: mdeuerlein.github.io
 ---
 
 ## Welcome to My GitHub
